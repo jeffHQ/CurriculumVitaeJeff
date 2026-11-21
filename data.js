@@ -3,7 +3,7 @@ window.CV = {
   headline: "AI & Cloud Engineer · Estudiante de Ciencia de la Computación",
   roles: ["AI & Cloud Engineer", "Data Engineer", "Pipelines ETL / ELT", "Automatización con IA", "Estudiante de Ciencia de la Computación"],
   location: "Lima, Perú",
-  about: "Estudio Ciencia de la Computación en UTEC y construyo soluciones de datos, nube e inteligencia artificial: desde pipelines ETL masivos hasta sistemas que leen documentos con IA y automatizan el trabajo del día a día.",
+  about: "Estudiante de 9.º ciclo de Ciencia de la Computación en UTEC, especializado en el diseño e implementación de soluciones con Inteligencia Artificial y Computación en la Nube. Integro IA Generativa, arquitecturas agénticas y procesamiento inteligente de datos. Destaco por liderar comunidades tecnológicas y resolver desafíos de alta complejidad con infraestructuras cloud eficientes, escalables y orientadas al negocio.",
   experience: [
     {
       period: "oct. 2026 — actualidad",
@@ -25,12 +25,13 @@ window.CV = {
       org: "Primax · Lima",
       logo: "assets/logos/primax.png",
       bullets: [
-        "Sistema de lectura, registro y guardado automático de documentos digitales con inteligencia artificial, con alertas según reglas de negocio.",
-        "Proceso ETL para datos bancarios masivos, con alertas de inconsistencias.",
-        "Bots que automatizan tareas rutinarias: recopilación de información bancaria, procesamiento de adjuntos de correo y correos automáticos.",
-        "Generación automática de PDFs masivos y reportes con actualización en tiempo real."
+        "Sistema de lectura, registro y guardado automático de documentos digitales con IA y OCR en la plataforma IA Builder (Microsoft), con alertas según reglas de negocio y trazabilidad de los datos.",
+        "Flujos inteligentes en Power Automate para automatizar procesos financieros y el control de gastos basados en reglas de negocio.",
+        "Proceso ETL para datos bancarios masivos, con alertas de inconsistencias; extracción, limpieza y procesamiento automatizado para habilitar capas analíticas y de visualización.",
+        "Dashboards ejecutivos para el seguimiento de flujos de caja y aplicaciones de escritorio personalizadas para requerimientos técnicos específicos.",
+        "Bots de automatización, generación automática de PDFs masivos y reportes con actualización en tiempo real."
       ],
-      tags: ["AI Builder", "Azure Databricks"]
+      tags: ["IA Builder", "OCR", "Power Automate", "Azure Databricks", "Power BI"]
     },
     {
       period: "may. 2026 — oct. 2026",
@@ -38,11 +39,13 @@ window.CV = {
       org: "inmoba.app · Remoto, Latinoamérica",
       logo: "assets/logos/inmoba.png",
       bullets: [
-        "Pipelines ETL/ELT de procesamiento, limpieza y transformación, cuidando integridad, calidad y consistencia de los datos.",
-        "Organización y seguridad de archivos masivos en AWS S3.",
-        "Gestión de base de datos y backend con Supabase."
+        "Pipelines ETL/ELT robustos y automatizados con el ecosistema de Python (Pandas, GeoPandas, PyArrow, Shapely), garantizando integridad, calidad y consistencia de los datos.",
+        "Lideré la migración de esquemas complejos desde formatos crudos (GeoJSON) hacia formatos binarios columnares de alta velocidad (GeoParquet / Parquet).",
+        "Algoritmos de cruce espacial masivo (Spatial Joins) y datasets estructurados de alta pureza optimizados para modelos de Machine Learning.",
+        "Reglas estrictas de calidad y gobernanza en memoria, con depuración de anomalías y reparación avanzada de topologías espaciales.",
+        "Organización y seguridad de archivos masivos en AWS S3; gestión de base de datos y backend con Supabase."
       ],
-      tags: ["Amazon S3", "Supabase"]
+      tags: ["Python", "GeoPandas", "Parquet", "Amazon S3", "Supabase"]
     },
     {
       period: "mar. 2026 — jun. 2026",
@@ -63,7 +66,7 @@ window.CV = {
       role: "Ciencia de la Computación",
       org: "UTEC - Universidad de Ingeniería y Tecnología",
       logo: "assets/logos/utec.png",
-      text: "Bachelor's degree. Desarrollo de software y de aplicaciones web."
+      text: "Ciencia de la Computación, 9.º ciclo. Desarrollo de software y de aplicaciones web."
     },
     {
       period: "jul. 2017 — dic. 2018",
@@ -74,6 +77,18 @@ window.CV = {
     }
   ],
   volunteering: [
+    {
+      period: "2024 — actualidad",
+      role: "Representante Estudiantil de Ciencia de la Computación",
+      org: "UTEC",
+      text: ""
+    },
+    {
+      period: "2024",
+      role: "Datathon Cementos Pacasmayo",
+      org: "UTEC",
+      text: ""
+    },
     {
       period: "nov. 2025 — abr. 2026",
       role: "Miembro del Consejo de Administración",
@@ -88,10 +103,14 @@ window.CV = {
     }
   ],
   skills: [
-    { group: "Datos y nube", items: ["ETL / ELT", "Azure", "Azure Databricks", "AWS S3", "Supabase", "SQL Server", "Transact-SQL"] },
-    { group: "IA y automatización", items: ["AI Builder", "Agentes de IA en Azure", "Bots de automatización"] },
-    { group: "Desarrollo y análisis", items: ["Python", "NumPy", "HTML5", "CSS", "Desarrollo web", "Power BI", "Excel"] },
-    { group: "Idiomas", items: ["Español"] }
+    { group: "IA & Data", items: ["IA Builder (OCR)", "IA Agéntica", "GenAI (Copilot, Gemini, Claude)", "ETL / ELT", "Pandas", "GeoPandas", "PyArrow", "Parquet", "Machine Learning"] },
+    { group: "Cloud", items: ["Azure Databricks", "Azure Functions", "Cosmos DB", "Blob Storage", "API Management", "AWS Lambda", "AWS S3", "Athena", "DynamoDB", "API Gateway", "Supabase"] },
+    { group: "BI & Herramientas", items: ["Power BI (Avanzado)", "Power Automate", "Excel (Avanzado)", "SAP", "Git"] },
+    { group: "Lenguajes y DB", items: ["Python (Avanzado)", "SQL (Avanzado)", "VBA", "C++", "Java", "Transact-SQL"] },
+    { group: "Idiomas", items: ["Español (Nativo)", "Inglés (Intermedio)"] }
+  ],
+  achievements: [
+    { period: "2025", title: "Smart City Challenge Winner", org: "DARAT LATAM y UTEC Ventures", text: "Primer lugar en competencia de innovación tecnológica, desarrollando soluciones basadas en Inteligencia Artificial para ciudades inteligentes con impacto social." }
   ],
   certifications: [
     { title: "Introduction to AI applications and agents in Azure", org: "Microsoft", date: "feb. 2026", link: "https://learn.microsoft.com/api/achievements/share/es-es/JeffQuintana-1707/NMTHGYNF?sharingId=C4B278AEE00760EB" },

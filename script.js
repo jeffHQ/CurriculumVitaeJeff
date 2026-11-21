@@ -19,6 +19,8 @@
   $("#experience").innerHTML = cv.experience.map(item).join("");
   $("#education").innerHTML = cv.education.map(item).join("");
   $("#volunteering").innerHTML = cv.volunteering.map(item).join("");
+  $("#achievements").innerHTML = cv.achievements.map((a) => `
+    <article class="card reveal win"><p class="period">${esc(a.period)}</p><h3>${esc(a.title)}</h3><p class="org">${esc(a.org)}</p><p>${esc(a.text)}</p></article>`).join("");
   $("#certs").innerHTML = cv.certifications.map((c) => `
     <article class="card reveal"><p class="period">${esc(c.date)}</p><h3>${esc(c.title)}</h3><p>${esc(c.org)}</p>
       ${c.link ? `<a href="${esc(c.link)}" target="_blank" rel="noopener">Ver credencial →</a>` : ""}</article>`).join("");
