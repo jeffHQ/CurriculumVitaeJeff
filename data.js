@@ -8,12 +8,14 @@ window.CV = {
       period: "oct. 2026 — actualidad",
       role: "AI & Cloud Engineer",
       org: "Consorcio Transporte Arequipa | Corredor Azul · Remoto",
+      logo: "assets/logos/cta.png",
       text: ""
     },
     {
       period: "jul. 2026 — oct. 2026",
       role: "Practicante de Tesorería",
       org: "Primax · Lima",
+      logo: "assets/logos/primax.png",
       bullets: [
         "Sistema de lectura, registro y guardado automático de documentos digitales con inteligencia artificial, con alertas según reglas de negocio.",
         "Proceso ETL para datos bancarios masivos, con alertas de inconsistencias.",
@@ -26,6 +28,7 @@ window.CV = {
       period: "may. 2026 — oct. 2026",
       role: "Data Engineer",
       org: "inmoba.app · Remoto, Latinoamérica",
+      logo: "assets/logos/inmoba.png",
       bullets: [
         "Pipelines ETL/ELT de procesamiento, limpieza y transformación, cuidando integridad, calidad y consistencia de los datos.",
         "Organización y seguridad de archivos masivos en AWS S3.",
@@ -37,6 +40,7 @@ window.CV = {
       period: "mar. 2026 — jun. 2026",
       role: "Practicante de Learning Lab",
       org: "Primax · Lima",
+      logo: "assets/logos/primax.png",
       bullets: [
         "Base de datos en la nube según los requerimientos del equipo.",
         "ETL para registro masivo de datos bancarios, respetando las políticas de privacidad.",

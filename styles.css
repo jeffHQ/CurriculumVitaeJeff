@@ -79,3 +79,4 @@ footer { text-align: center; color: var(--muted); padding: 3rem 1rem; font-size:
   .reveal { opacity: 1; transform: none; transition: none; }
   h1, .lead, .scroll-hint, .scroll-hint span { animation: none; }
 }
+.item .logo { height: 64px; width: auto; max-width: 200px; object-fit: contain; display: block; margin-bottom: .8rem; border-radius: 8px; }

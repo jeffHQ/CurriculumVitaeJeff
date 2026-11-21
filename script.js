@@ -5,6 +5,7 @@
 
   const item = (e) => `
     <article class="item reveal">
+      ${e.logo ? `<img class="logo" src="${esc(e.logo)}" alt="" onerror="this.remove()">` : ""}
       <p class="period">${esc(e.period)}</p>
       <h3>${esc(e.role)}</h3>
       <p class="org">${esc(e.org)}</p>
