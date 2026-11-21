@@ -8,19 +8,25 @@
       <p class="period">${esc(e.period)}</p>
       <h3>${esc(e.role)}</h3>
       <p class="org">${esc(e.org)}</p>
-      <p>${esc(e.text)}</p>
+      ${e.text ? `<p>${esc(e.text)}</p>` : ""}
+      ${e.bullets ? `<ul class="bullets">${e.bullets.map((b) => `<li>${esc(b)}</li>`).join("")}</ul>` : ""}
+      ${e.tags ? `<div class="chips small">${e.tags.map((t) => `<span>${esc(t)}</span>`).join("")}</div>` : ""}
     </article>`;
 
+  $("#headline").textContent = cv.headline;
+  $("#location").textContent = cv.location;
+  $("#about").textContent = cv.about;
   $("#experience").innerHTML = cv.experience.map(item).join("");
   $("#education").innerHTML = cv.education.map(item).join("");
+  $("#volunteering").innerHTML = cv.volunteering.map(item).join("");
+  $("#certs").innerHTML = cv.certifications.map((c) => `
+    <article class="card reveal"><p class="period">${esc(c.date)}</p><h3>${esc(c.title)}</h3><p>${esc(c.org)}</p>
+      ${c.link ? `<a href="${esc(c.link)}" target="_blank" rel="noopener">Ver credencial →</a>` : ""}</article>`).join("");
   $("#skills").innerHTML = cv.skills.map((g) => `
     <div class="group reveal"><h3>${esc(g.group)}</h3>
       <div class="chips">${g.items.map((i) => `<span>${esc(i)}</span>`).join("")}</div></div>`).join("");
-  $("#projects").innerHTML = cv.projects.map((p) => `
-    <article class="card reveal"><h3>${esc(p.title)}</h3><p>${esc(p.text)}</p>
-      ${p.link ? `<a href="${esc(p.link)}" target="_blank" rel="noopener">Ver proyecto →</a>` : ""}</article>`).join("");
   $("#contact").innerHTML = cv.contact.map((c) =>
-    `<li><span>${esc(c.label)}</span><a href="${esc(c.href)}" target="_blank" rel="noopener">${esc(c.value)}</a></li>`).join("");
+    `<li><span>${esc(c.label)}</span>${c.href ? `<a href="${esc(c.href)}" target="_blank" rel="noopener">${esc(c.value)}</a>` : `<b>${esc(c.value)}</b>`}</li>`).join("");
   $("#year").textContent = new Date().getFullYear();
 
   // Navegación por puntos

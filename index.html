@@ -4,20 +4,23 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Jeffry Hilario · Curriculum</title>
-  <meta name="description" content="Curriculum interactivo de Jeffry Hilario.">
+  <meta name="description" content="Curriculum interactivo de Jeffry Hilario, AI & Cloud Engineer.">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="progress" id="progress"></div>
-
   <nav class="dots" id="dots" aria-label="Capítulos"></nav>
 
   <header class="hero chapter" id="inicio" data-title="Inicio">
     <div class="hero-inner">
-      <p class="eyebrow">Curriculum Vitae</p>
-      <h1>Jeffry<br>Hilario</h1>
-      <p class="lead">[Tu titular profesional aquí]</p>
-      <a class="scroll-hint" href="#sobre-mi">Desliza para conocer mi historia <span>↓</span></a>
+      <div class="hero-text">
+        <p class="eyebrow">Curriculum Vitae</p>
+        <h1>Jeffry<br>Hilario</h1>
+        <p class="lead" id="headline"></p>
+        <p class="where" id="location"></p>
+        <a class="scroll-hint" href="#sobre-mi">Desliza para conocer mi historia <span>↓</span></a>
+      </div>
+      <img class="portrait" src="assets/perfil.png" alt="Retrato de Jeffry Hilario" width="400" height="400">
     </div>
   </header>
 
@@ -26,7 +29,7 @@
       <div class="wrap">
         <p class="num reveal">01</p>
         <h2 class="reveal">Sobre mí</h2>
-        <p class="big reveal">[Un párrafo breve sobre quién eres, qué te mueve y qué buscas.]</p>
+        <p class="big reveal" id="about"></p>
       </div>
     </section>
 
@@ -46,27 +49,38 @@
       </div>
     </section>
 
-    <section class="chapter" id="habilidades" data-title="Habilidades">
+    <section class="chapter banner-chapter" id="comunidad" data-title="Comunidad">
       <div class="wrap">
         <p class="num reveal">04</p>
+        <h2 class="reveal">Comunidad</h2>
+        <figure class="banner reveal">
+          <img src="assets/comunidad.webp" alt="Celebración con la comunidad estudiantil de UTEC" loading="lazy">
+        </figure>
+        <div class="timeline" id="volunteering"></div>
+      </div>
+    </section>
+
+    <section class="chapter" id="habilidades" data-title="Habilidades">
+      <div class="wrap">
+        <p class="num reveal">05</p>
         <h2 class="reveal">Habilidades</h2>
         <div class="skills" id="skills"></div>
       </div>
     </section>
 
-    <section class="chapter" id="proyectos" data-title="Proyectos">
+    <section class="chapter" id="certificaciones" data-title="Certificaciones">
       <div class="wrap">
-        <p class="num reveal">05</p>
-        <h2 class="reveal">Proyectos</h2>
-        <div class="cards" id="projects"></div>
+        <p class="num reveal">06</p>
+        <h2 class="reveal">Certificaciones</h2>
+        <div class="cards" id="certs"></div>
       </div>
     </section>
 
     <section class="chapter" id="contacto" data-title="Contacto">
       <div class="wrap">
-        <p class="num reveal">06</p>
+        <p class="num reveal">07</p>
         <h2 class="reveal">Hablemos</h2>
-        <p class="big reveal">[Mensaje de cierre]</p>
+        <p class="big reveal">¿Tienes un proyecto de datos, nube o IA? Me encantará conversar.</p>
         <ul class="contact reveal" id="contact"></ul>
       </div>
     </section>
