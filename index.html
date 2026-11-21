@@ -31,6 +31,19 @@
         <p class="num reveal">01</p>
         <h2 class="reveal">Sobre mí</h2>
         <p class="big reveal" id="about"></p>
+        <div class="stats reveal" id="stats"></div>
+      </div>
+    </section>
+
+    <section class="chapter journey" id="ruta" data-title="Mi ruta">
+      <div class="j-stick">
+        <div class="wrap jwrap">
+          <p class="num">00</p>
+          <h2>Mi ruta</h2>
+          <p class="j-hint">Sigue bajando: el bus avanza con tu scroll ↓</p>
+        </div>
+        <div class="wrap jwrap"><article class="j-card" id="jcard" aria-live="polite"></article></div>
+        <div class="j-road" id="jroad"><svg id="jsvg" role="img" aria-label="Ruta de mi trayectoria"></svg></div>
       </div>
     </section>
 
@@ -73,6 +86,10 @@
       <div class="wrap">
         <p class="num reveal">06</p>
         <h2 class="reveal">Habilidades</h2>
+        <div class="graph-wrap reveal">
+          <canvas id="graph" aria-label="Grafo interactivo de habilidades"></canvas>
+          <p class="graph-hint">Pasa el cursor sobre una habilidad para ver sus conexiones · arrastra los nodos</p>
+        </div>
         <div class="skills" id="skills"></div>
       </div>
     </section>
@@ -82,6 +99,22 @@
         <p class="num reveal">07</p>
         <h2 class="reveal">Certificaciones</h2>
         <div class="cards" id="certs"></div>
+      </div>
+    </section>
+
+    <section class="chapter" id="terminal" data-title="Terminal">
+      <div class="wrap">
+        <p class="num reveal">00</p>
+        <h2 class="reveal">Explora mi CV en terminal</h2>
+        <div class="term reveal" id="term">
+          <div class="term-bar"><i></i><i></i><i></i><span>jeffry@cv:~</span></div>
+          <div class="term-out" id="term-out" aria-live="polite"></div>
+          <form class="term-row" id="term-form" autocomplete="off">
+            <span class="prompt">jeffry@cv:~$</span>
+            <input id="term-in" type="text" spellcheck="false" autocapitalize="off" autocomplete="off" aria-label="Comando">
+          </form>
+        </div>
+        <div class="term-chips" id="term-chips"></div>
       </div>
     </section>
 
@@ -100,5 +133,6 @@
   <script src="data.js"></script>
   <script src="script.js"></script>
   <script src="fx.js"></script>
+  <script src="fx2.js"></script>
 </body>
 </html>

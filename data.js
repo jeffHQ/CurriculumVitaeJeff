@@ -112,6 +112,22 @@ window.CV = {
   achievements: [
     { period: "2025", title: "Smart City Challenge Winner", org: "DARAT LATAM y UTEC Ventures", text: "Primer lugar en competencia de innovación tecnológica, desarrollando soluciones basadas en Inteligencia Artificial para ciudades inteligentes con impacto social." }
   ],
+  journey: [
+    { year: "2017", title: "Primeros pasos en apps", sub: "IDAT", text: "Diseño y desarrollo de aplicaciones móviles y web.", logo: "assets/logos/idat.png" },
+    { year: "2020", title: "Ciencia de la Computación", sub: "UTEC", text: "Inicio de la carrera de Ciencia de la Computación en UTEC.", logo: "assets/logos/utec.png" },
+    { year: "2025", title: "Smart City Challenge Winner", sub: "DARAT LATAM y UTEC Ventures", text: "Primer lugar con soluciones de Inteligencia Artificial para ciudades inteligentes con impacto social." },
+    { year: "2026", title: "Primax", sub: "Learning Lab y Tesorería", text: "ETL bancario masivo, dashboards, IA con OCR y automatización de procesos financieros.", logo: "assets/logos/primax.png" },
+    { year: "2026", title: "inmoba.app", sub: "Data Engineer", text: "Pipelines geoespaciales, spatial joins y migración de GeoJSON a GeoParquet.", logo: "assets/logos/inmoba.png" },
+    { year: "2026", title: "Corredor Azul", sub: "AI & Cloud Engineer", text: "Apps de control de estaciones y buses, cloud en AWS y Azure, y machine learning para optimizar el cronograma de salida de buses.", logo: "assets/logos/cta.png" }
+  ],
+  graphLinks: [
+    ["Python (Avanzado)", "Pandas"], ["Python (Avanzado)", "GeoPandas"], ["Pandas", "ETL / ELT"],
+    ["PyArrow", "Parquet"], ["GeoPandas", "Parquet"], ["ETL / ELT", "Azure Databricks"], ["ETL / ELT", "AWS S3"],
+    ["Power Automate", "IA Builder (OCR)"], ["Power BI (Avanzado)", "SQL (Avanzado)"], ["Supabase", "SQL (Avanzado)"],
+    ["AWS Lambda", "Python (Avanzado)"], ["Azure Functions", "Python (Avanzado)"], ["Machine Learning", "Python (Avanzado)"],
+    ["Machine Learning", "Pandas"], ["IA Agéntica", "GenAI (Copilot, Gemini, Claude)"], ["Azure Databricks", "Python (Avanzado)"],
+    ["Excel (Avanzado)", "VBA"], ["Cosmos DB", "Azure Functions"], ["DynamoDB", "AWS Lambda"], ["Athena", "AWS S3"]
+  ],
   certifications: [
     { title: "Introduction to AI applications and agents in Azure", org: "Microsoft", date: "feb. 2026", link: "https://learn.microsoft.com/api/achievements/share/es-es/JeffQuintana-1707/NMTHGYNF?sharingId=C4B278AEE00760EB" },
     { title: "Querying and modifying data with Transact-SQL", org: "Microsoft", date: "feb. 2026", link: "https://learn.microsoft.com/api/achievements/share/es-es/JeffQuintana-1707/UA4CY6G3?sharingId=C4B278AEE00760EB" },

@@ -123,3 +123,47 @@ h2 { font-family: ui-monospace, "SF Mono", Consolas, monospace; letter-spacing: 
 .card.win { grid-column: 1 / -1; border-color: var(--accent); background: linear-gradient(135deg, var(--card), color-mix(in srgb, var(--accent) 10%, var(--card))); }
 .card.win h3 { font-size: 1.5rem; }
 .card .org { color: var(--fg); margin-bottom: .4rem; }
+
+/* ===== Contadores ===== */
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 1.5rem; margin-top: 3.5rem; }
+.stat { border-top: 2px solid var(--accent); padding-top: .8rem; }
+.stat b { display: block; font-family: ui-monospace, Consolas, monospace; font-size: clamp(2.2rem, 6vw, 3.4rem); letter-spacing: -.05em; line-height: 1; }
+.stat span { color: var(--muted); font-size: .9rem; }
+
+/* ===== Viaje del bus ===== */
+.chapter.journey { display: block; min-height: 520vh; padding: 0; }
+.j-stick { position: sticky; top: 0; height: 100vh; display: flex; flex-direction: column; justify-content: center; gap: 1.2rem; padding: 6vh 6vw 3vh; }
+.jwrap { width: min(860px, 100%); margin: 0 auto; }
+.j-stick h2 { margin: .2rem 0 .2rem; }
+.j-hint { color: var(--muted); font-size: .9rem; }
+.j-card { display: flex; gap: 1.4rem; align-items: center; min-height: 170px; background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 1.4rem 1.6rem; }
+.j-card.swap { animation: swap .5s ease both; }
+@keyframes swap { from { opacity: 0; transform: translateY(14px); } }
+.jlogo { width: 72px; height: 72px; object-fit: contain; border-radius: 10px; flex-shrink: 0; }
+.jtrophy { font-size: 3rem; flex-shrink: 0; width: 72px; text-align: center; }
+.j-card h3 { font-size: 1.4rem; }
+.j-card .org { color: var(--muted); margin-bottom: .4rem; }
+.j-road { width: 100%; overflow: hidden; }
+.j-road svg { display: block; margin: 0 auto; }
+@media (max-width: 640px) { .j-card { flex-direction: column; align-items: flex-start; min-height: 230px; } .chapter.journey { min-height: 600vh; } }
+
+/* ===== Grafo ===== */
+.graph-wrap { margin-bottom: 2.5rem; border: 1px solid var(--line); border-radius: 18px; background: radial-gradient(circle at 50% 50%, color-mix(in srgb, var(--accent) 8%, transparent), transparent 70%); overflow: hidden; position: relative; }
+.graph-wrap canvas { display: block; width: 100%; }
+.graph-hint { position: absolute; left: 0; right: 0; bottom: .6rem; text-align: center; font-size: .75rem; color: var(--muted); pointer-events: none; }
+
+/* ===== Terminal ===== */
+.term { background: #0e141b; color: #d6f3ff; border-radius: 14px; overflow: hidden; box-shadow: 0 20px 50px rgba(0, 30, 50, .25); font-family: ui-monospace, "SF Mono", Consolas, monospace; font-size: .88rem; cursor: text; }
+.term-bar { display: flex; align-items: center; gap: .45rem; padding: .6rem .9rem; background: #18212c; }
+.term-bar i { width: 11px; height: 11px; border-radius: 50%; background: #ff5f57; }
+.term-bar i:nth-child(2) { background: #febc2e; } .term-bar i:nth-child(3) { background: #28c840; }
+.term-bar span { margin-left: .6rem; color: #8aa0ad; font-size: .8rem; }
+.term-out { height: 340px; overflow-y: auto; padding: 1rem; line-height: 1.55; }
+.ln { white-space: pre-wrap; word-break: break-word; }
+.ln.cmd { color: #7fe3ff; } .ln.err { color: #ff8a8a; } .ln.ok { color: #7affc4; } .ln.dim { color: #8aa0ad; }
+.term-row { display: flex; gap: .6rem; padding: .7rem 1rem; border-top: 1px solid #243140; }
+.prompt { color: #00bfff; white-space: nowrap; }
+.term-row input { flex: 1; min-width: 0; background: transparent; border: 0; outline: 0; color: #fff; font: inherit; caret-color: #00bfff; }
+.term-chips { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: 1rem; }
+.term-chips button { font: inherit; font-size: .8rem; font-family: ui-monospace, Consolas, monospace; background: var(--card); color: var(--accent-text); border: 1px solid var(--line); border-radius: 99px; padding: .35rem .85rem; cursor: pointer; transition: .2s; }
+.term-chips button:hover { border-color: var(--accent); box-shadow: 0 0 12px color-mix(in srgb, var(--accent) 35%, transparent); }
