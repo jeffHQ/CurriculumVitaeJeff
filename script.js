@@ -14,8 +14,7 @@
       ${e.tags ? `<div class="chips small">${e.tags.map((t) => `<span>${esc(t)}</span>`).join("")}</div>` : ""}
     </article>`;
 
-  $("#headline").textContent = cv.headline;
-  $("#location").textContent = cv.location;
+    $("#location").textContent = cv.location;
   $("#about").textContent = cv.about;
   $("#experience").innerHTML = cv.experience.map(item).join("");
   $("#education").innerHTML = cv.education.map(item).join("");

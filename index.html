@@ -12,11 +12,12 @@
   <nav class="dots" id="dots" aria-label="Capítulos"></nav>
 
   <header class="hero chapter" id="inicio" data-title="Inicio">
+    <canvas id="net" aria-hidden="true"></canvas>
     <div class="hero-inner">
       <div class="hero-text">
         <p class="eyebrow">Curriculum Vitae</p>
         <h1>Jeffry<br>Hilario</h1>
-        <p class="lead" id="headline"></p>
+        <p class="lead"><span id="typed"></span><span class="caret" aria-hidden="true"></span></p>
         <p class="where" id="location"></p>
         <a class="scroll-hint" href="#sobre-mi">Desliza para conocer mi historia <span>↓</span></a>
       </div>
@@ -90,5 +91,6 @@
 
   <script src="data.js"></script>
   <script src="script.js"></script>
+  <script src="fx.js"></script>
 </body>
 </html>

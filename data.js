@@ -1,6 +1,7 @@
 // Contenido del CV. Edita aquí; el diseño se genera solo.
 window.CV = {
   headline: "AI & Cloud Engineer · Estudiante de Ciencia de la Computación",
+  roles: ["AI & Cloud Engineer", "Data Engineer", "Pipelines ETL / ELT", "Automatización con IA", "Estudiante de Ciencia de la Computación"],
   location: "Lima, Perú",
   about: "Estudio Ciencia de la Computación en UTEC y construyo soluciones de datos, nube e inteligencia artificial: desde pipelines ETL masivos hasta sistemas que leen documentos con IA y automatizan el trabajo del día a día.",
   experience: [
