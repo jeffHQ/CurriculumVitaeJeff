@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jeffry Hilario · Curriculum</title>
+  <meta name="description" content="Curriculum interactivo de Jeffry Hilario.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="progress" id="progress"></div>
+
+  <nav class="dots" id="dots" aria-label="Capítulos"></nav>
+
+  <header class="hero chapter" id="inicio" data-title="Inicio">
+    <div class="hero-inner">
+      <p class="eyebrow">Curriculum Vitae</p>
+      <h1>Jeffry<br>Hilario</h1>
+      <p class="lead">[Tu titular profesional aquí]</p>
+      <a class="scroll-hint" href="#sobre-mi">Desliza para conocer mi historia <span>↓</span></a>
+    </div>
+  </header>
+
+  <main>
+    <section class="chapter" id="sobre-mi" data-title="Sobre mí">
+      <div class="wrap">
+        <p class="num reveal">01</p>
+        <h2 class="reveal">Sobre mí</h2>
+        <p class="big reveal">[Un párrafo breve sobre quién eres, qué te mueve y qué buscas.]</p>
+      </div>
+    </section>
+
+    <section class="chapter" id="experiencia" data-title="Experiencia">
+      <div class="wrap">
+        <p class="num reveal">02</p>
+        <h2 class="reveal">Experiencia</h2>
+        <div class="timeline" id="experience"></div>
+      </div>
+    </section>
+
+    <section class="chapter" id="educacion" data-title="Educación">
+      <div class="wrap">
+        <p class="num reveal">03</p>
+        <h2 class="reveal">Educación</h2>
+        <div class="timeline" id="education"></div>
+      </div>
+    </section>
+
+    <section class="chapter" id="habilidades" data-title="Habilidades">
+      <div class="wrap">
+        <p class="num reveal">04</p>
+        <h2 class="reveal">Habilidades</h2>
+        <div class="skills" id="skills"></div>
+      </div>
+    </section>
+
+    <section class="chapter" id="proyectos" data-title="Proyectos">
+      <div class="wrap">
+        <p class="num reveal">05</p>
+        <h2 class="reveal">Proyectos</h2>
+        <div class="cards" id="projects"></div>
+      </div>
+    </section>
+
+    <section class="chapter" id="contacto" data-title="Contacto">
+      <div class="wrap">
+        <p class="num reveal">06</p>
+        <h2 class="reveal">Hablemos</h2>
+        <p class="big reveal">[Mensaje de cierre]</p>
+        <ul class="contact reveal" id="contact"></ul>
+      </div>
+    </section>
+  </main>
+
+  <footer><p>© <span id="year"></span> Jeffry Hilario</p></footer>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
