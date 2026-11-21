@@ -10,7 +10,11 @@ window.CV = {
       role: "AI & Cloud Engineer",
       org: "Consorcio Transporte Arequipa | Corredor Azul · Remoto",
       logo: "assets/logos/cta.png",
-      text: ""
+      bullets: [
+        "Creación de aplicaciones para el control de estaciones y buses.",
+        "Proyecto de machine learning end to end: Floro."
+      ],
+      tags: ["Machine Learning", "Cloud", "Apps de control"]
     },
     {
       period: "jul. 2026 — oct. 2026",
