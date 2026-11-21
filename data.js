@@ -15,7 +15,7 @@ window.CV = {
         "Backend y base de datos de las aplicaciones con Supabase.",
         "Arquitectura e infraestructura cloud en AWS y Azure para alojar, almacenar y escalar los datos de la operación.",
         "Servicios de inteligencia artificial en Azure aplicados a la operación del transporte.",
-        "Proyecto de machine learning end to end: Floro."
+        "Realización de un proyecto de machine learning para optimizar el cronograma de salida de buses."
       ],
       tags: ["Supabase", "AWS", "Azure", "Machine Learning", "Apps de control"]
     },
