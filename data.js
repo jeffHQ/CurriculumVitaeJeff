@@ -12,9 +12,12 @@ window.CV = {
       logo: "assets/logos/cta.png",
       bullets: [
         "Creación de aplicaciones para el control de estaciones y buses.",
+        "Backend y base de datos de las aplicaciones con Supabase.",
+        "Arquitectura e infraestructura cloud en AWS y Azure para alojar, almacenar y escalar los datos de la operación.",
+        "Servicios de inteligencia artificial en Azure aplicados a la operación del transporte.",
         "Proyecto de machine learning end to end: Floro."
       ],
-      tags: ["Machine Learning", "Cloud", "Apps de control"]
+      tags: ["Supabase", "AWS", "Azure", "Machine Learning", "Apps de control"]
     },
     {
       period: "jul. 2026 — oct. 2026",
