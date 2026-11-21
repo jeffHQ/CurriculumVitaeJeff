@@ -54,12 +54,14 @@ window.CV = {
       period: "ago. 2020 — nov. 2025",
       role: "Ciencia de la Computación",
       org: "UTEC - Universidad de Ingeniería y Tecnología",
+      logo: "assets/logos/utec.png",
       text: "Bachelor's degree. Desarrollo de software y de aplicaciones web."
     },
     {
       period: "jul. 2017 — dic. 2018",
       role: "Asistente en Diseño y Desarrollo de Apps",
       org: "IDAT",
+      logo: "assets/logos/idat.png",
       text: "Diseño de aplicaciones móviles y desarrollo de aplicaciones web."
     }
   ],
